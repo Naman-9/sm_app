@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const connectDB = async (): Promise<Void> => {
+export const connectDB = async (): Promise<Void> => {
   if (mongoose.connection.readyState >= 1) return;
 
   try {
@@ -14,3 +14,4 @@ const connectDB = async (): Promise<Void> => {
     process.exit(1);
   }
 };
+
