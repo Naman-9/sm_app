@@ -1,3 +1,5 @@
+// TODO: update and optimize it
+
 import mongoose, { Schema } from "mongoose";
 import User from "./User";
 
